@@ -9,3 +9,6 @@ RUN npm install && npm run build
 FROM nginx:1.13.3-alpine
 COPY ./nginx-server.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /app/public /public
+RUN mkdir /public/__default_backend_files && \
+    find /public -type f ! -path "*/index.html" -exec mv {} /public/__default_backend_files/ \; && \
+    rm -rf /public/__default_backend_files/static

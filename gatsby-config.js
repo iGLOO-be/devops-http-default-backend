@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/__default_backend_files`,
   siteMetadata: {
     title: `Maintenance`,
   },
