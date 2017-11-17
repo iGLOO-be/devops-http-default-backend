@@ -8,6 +8,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^2.0.2",
     "normalize.css": "^7.0.0",
+    "recompose": "^0.26.0",
     "styled-components": "^2.2.3"
   },
   "license": "MIT",

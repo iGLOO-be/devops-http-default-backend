@@ -1,24 +1,30 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import mapProps from 'recompose/mapProps'
 
-const TableInfo = styled(({
-  className
+const isBrowser = typeof window !== 'undefined'
+
+let TableInfo = styled(({
+  className,
+  date,
+  hostname,
+  url
 }) => (
   <div className={className}>
     <table>
       <tbody>
         <tr>
           <td>Date</td>
-          <td>02.11.2017 at 01:07 PM</td>
+          <td>{date || '-'}</td>
         </tr>
         <tr>
           <td>Hostname</td>
-          <td>florent.local.igloo.be</td>
+          <td>{hostname || '-'}</td>
         </tr>
         <tr>
           <td>URL</td>
-          <td>http://florent.local.igloo.be/index.cfm</td>
+          <td>{url || '-'}</td>
         </tr>
       </tbody>
 
@@ -37,5 +43,16 @@ const TableInfo = styled(({
     tr:not(:last-child) td { padding-bottom: 15px; }
   }
 `
+
+TableInfo = mapProps(props => {
+  if (!isBrowser) return props
+
+  return {
+    ...props,
+    date: new Date().toString(),
+    hostname: window.location.hostname,
+    url: window.location.href
+  }
+})(TableInfo)
 
 export default TableInfo
