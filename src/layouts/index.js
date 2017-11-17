@@ -45,7 +45,7 @@ const TemplateWrapper = styled(({ className, children }) => (
 
 
   // MediaQueries
-  @media screen and (max-height: 940px) {
+  @media screen and (max-height: 870px) {
     background:
       url(${logoIgloo}) no-repeat bottom 75px right 30px,
       url(${WaveLt}) repeat-x bottom,
@@ -54,19 +54,42 @@ const TemplateWrapper = styled(({ className, children }) => (
       ${colors.primary};
   }
 
-  @media screen and (max-height: 760px) {
-  background:
-    url(${WaveLt}) repeat-x bottom,
-    url(${bgStars}) repeat-x,
-    url(${WaveDk})  repeat-x -15px bottom,
-    url(${bgStars}) repeat-x,
-    ${colors.primary};
+  @media screen and (max-height: 600px) {
+    background:
+      url(${WaveLt}) repeat-x bottom,
+      url(${WaveDk})  repeat-x -15px bottom,
+      url(${bgStars}) repeat-x,
+      ${colors.primary};
   }
 
-  @media screen and (max-height: 700px) {
-  background:
-    url(${bgStars}) repeat-x,
-    ${colors.primary};
+  @media screen and (max-height: 700px) and (min-width: 720px) {
+    background:
+      url(${logoIgloo}) no-repeat bottom 75px right 30px,
+      url(${bgStars}) repeat-x,
+      ${colors.primary};
+  }
+
+  @media screen and (min-height: 870px) and (max-width: 720px) {
+    background:
+      url(${WaveLt}) repeat-x bottom,
+      url(${bgOctopus}) no-repeat bottom center,
+      url(${WaveDk})  repeat-x -15px bottom,
+      url(${bgStars}) repeat-x,
+      ${colors.primary};
+  }
+
+  @media screen and (min-height: 870px) and (max-width: 540px) {
+    background:
+      url(${WaveLt}) repeat-x bottom,
+      url(${WaveDk})  repeat-x -15px bottom,
+      url(${bgStars}) repeat-x,
+      ${colors.primary};
+  }
+
+  @media screen and (max-height: 640px) {
+    background:
+      url(${bgStars}) repeat-x,
+      ${colors.primary};
   }
 `
 

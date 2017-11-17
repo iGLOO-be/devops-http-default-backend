@@ -11,16 +11,14 @@ import Footer from '../components/Footer'
 import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
-const Error404Page = ({className}) => (
+const Maintenance = ({className}) => (
   <div>
-    <Helmet title='Error 404' />
-    <Header error='404' title='Page not found' />
+    <Helmet title='Server maintenance' />
+    <Header error='Oh!' title='Maintenance' />
     <Desc>
-      The page you’re looking for can’t be found but may be avalaible in the future.
-      Please try again later.
+      Server in maintenance. Please come back in few moments.
     </Desc>
-    <Footer><Button>Go to homepage</Button></Footer>
   </div>
 )
 
-export default Error404Page
+export default Maintenance
