@@ -13,5 +13,4 @@ COPY ./nginx-server.conf /etc/nginx/conf.d/default.conf
 COPY --from=0 /app/public /public
 RUN mkdir /public/__default_backend_files && \
     mv /public/static /public/__default_backend_files/static && \
-    find /public -type f ! -path "*/index.html" ! -path "*/static/*" && \
     find /public -type f ! -path "*/index.html" ! -path "*/static/*" -exec mv {} /public/__default_backend_files/ \;
