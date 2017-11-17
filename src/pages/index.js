@@ -33,7 +33,7 @@ const Desc = styled.div`
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 940px;
-  padding: 0 15px;
+  padding: 15px;
 `
 
 const IndexPage = styled(({className}) => (
@@ -51,7 +51,6 @@ const IndexPage = styled(({className}) => (
 ))`
   min-height: 100vh;
   display: flex;
-  padding: 15px 0;
 
   background:
     url(${logoIgloo}) no-repeat bottom 75px right 30px,
