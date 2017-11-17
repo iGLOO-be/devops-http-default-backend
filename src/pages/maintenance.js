@@ -5,10 +5,7 @@ import Helmet from 'react-helmet'
 import '../../node_modules/normalize.css/normalize.css'
 
 // Components
-import Button from '../components/ui/Button'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
-import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
 const Maintenance = ({className}) => (

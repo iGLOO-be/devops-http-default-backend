@@ -8,7 +8,6 @@ import '../../node_modules/normalize.css/normalize.css'
 import Button from '../components/ui/Button'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
 const Error404Page = ({className}) => (
