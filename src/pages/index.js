@@ -61,7 +61,14 @@ const IndexPage = styled(({className}) => (
     url(${bgStars}) repeat-x,
     ${colors.primary};
 
-   @media screen and (max-height: 940px) {
+  color: ${colors.light};
+  ${fontFamily({weight: 'book', size: '14px'})};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  // MediaQueries
+  @media screen and (max-height: 940px) {
     background:
       url(${logoIgloo}) no-repeat bottom 75px right 30px,
       url(${WaveLt}) repeat-x bottom,
@@ -84,11 +91,6 @@ const IndexPage = styled(({className}) => (
      url(${bgStars}) repeat-x,
      ${colors.primary};
   }
-
-  color: ${colors.light};
-  ${fontFamily({weight: 'book', size: '14px'})};
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 `
 
 export default IndexPage
