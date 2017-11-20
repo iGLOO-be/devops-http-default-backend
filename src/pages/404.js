@@ -8,18 +8,17 @@ import '../../node_modules/normalize.css/normalize.css'
 import Button from '../components/ui/Button'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
 const Error404Page = ({className}) => (
   <div>
     <Helmet title='Error 404' />
-    <Header error='404' title='Not Found' />
+    <Header error='404' title='Page not found' />
     <Desc>
-      Blabla
+      The page you’re looking for can’t be found but may be avalaible in the future.
+      Please try again later.
     </Desc>
-    <Footer><Button>Go back</Button></Footer>
-    <TableInfo />
+    <Footer><Button>Go to homepage</Button></Footer>
   </div>
 )
 
