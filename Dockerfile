@@ -8,7 +8,7 @@ COPY ./gatsby-config.js ./
 COPY ./src ./src/
 RUN npm run build
 
-FROM nginx:1.13.3-alpine
+FROM nginx:1.15.0-alpine
 ENV NGINX_PORT=80
 COPY ./nginx-server.conf /etc/nginx/conf.d/default.conf.tpl
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
