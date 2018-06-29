@@ -1,4 +1,4 @@
-FROM node:9.2.0-alpine
+FROM node:10.5.0-alpine
 ENV NODE_ENV production
 ENV NPM_CONFIG_LOGLEVEL warn
 WORKDIR /app
