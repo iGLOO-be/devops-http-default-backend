@@ -9,7 +9,7 @@ COPY ./src ./src/
 RUN npm run build
 
 FROM nginx:1.15.0-alpine
-ENV NGINX_PORT=80
+ENV NGINX_PORT=8080
 COPY ./nginx-server.conf /etc/nginx/conf.d/default.conf.tpl
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 COPY --from=0 /app/public /public
