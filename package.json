@@ -1,7 +1,7 @@
 {
   "name": "igloo-devops-http-default-backend",
   "description": "iGLOO default backend",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "dependencies": {
     "gatsby": "^2.0.64",
     "gatsby-link": "^2.0.7",
