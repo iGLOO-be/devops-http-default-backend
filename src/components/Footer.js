@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // Constants
 import { colors } from '../lib/constants'
 
-const Footer = styled(({className, children}) => (
+const Footer = styled(({ className, children }) => (
   <div className={className}>
     {children}
   </div>

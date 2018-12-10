@@ -8,7 +8,7 @@ import '../../node_modules/normalize.css/normalize.css'
 import Header from '../components/Header'
 import Desc from '../components/Desc'
 
-const Maintenance = ({className}) => (
+const Maintenance = ({ className }) => (
   <div>
     <Helmet title='Server maintenance' />
     <Header error='Oh!' title='Maintenance' />

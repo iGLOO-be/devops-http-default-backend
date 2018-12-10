@@ -35,11 +35,11 @@ const Header = styled(({
   }
 
   .header__error {
-    ${fontFamily({weight: 'bold', size: '165px'})};
+    ${fontFamily({ weight: 'bold', size: '165px' })};
     line-height: 165px;
   }
 
-  .header__title { ${fontFamily({size: '35px'})}; }
+  .header__title { ${fontFamily({ size: '35px' })}; }
 `
 
 export default Header

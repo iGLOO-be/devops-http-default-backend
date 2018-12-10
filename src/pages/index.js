@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
-const IndexPage = ({className}) => (
+const IndexPage = ({ className }) => (
   <div>
     <Helmet title='Maintenance' />
     <Header error='503' title='Service unavailable' />

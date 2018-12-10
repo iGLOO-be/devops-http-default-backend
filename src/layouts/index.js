@@ -1,7 +1,6 @@
 
 import styled from 'styled-components'
 import React from 'react'
-import PropTypes from 'prop-types'
 
 // Assets
 import bgStars from '../assets/stars.svg'
@@ -12,7 +11,7 @@ import logoIgloo from '../assets/igloo.svg'
 
 // Lib
 import { colors } from '../lib/constants'
-import { fontFamily } from '../lib/Fonts'
+import { fontFamily, GlobalStyle } from '../lib/Fonts'
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -22,8 +21,9 @@ const Wrapper = styled.div`
 
 const TemplateWrapper = styled(({ className, children }) => (
   <div className={className}>
+    <GlobalStyle />
     <Wrapper>
-      {children()}
+      {children}
     </Wrapper>
   </div>
 ))`
@@ -39,7 +39,7 @@ const TemplateWrapper = styled(({ className, children }) => (
     ${colors.primary};
 
   color: ${colors.light};
-  ${fontFamily({weight: 'book', size: '14px'})};
+  ${fontFamily({ weight: 'book', size: '14px' })};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -92,9 +92,5 @@ const TemplateWrapper = styled(({ className, children }) => (
       ${colors.primary};
   }
 `
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-}
 
 export default TemplateWrapper

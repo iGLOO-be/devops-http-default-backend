@@ -1,5 +1,5 @@
 
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 import { fontSize } from './fontSize'
 
@@ -23,7 +23,7 @@ export const circularStd = {
   }
 }
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   ${fontFace(circularStd.name, circularStd.book, 300)}
   ${fontFace(circularStd.name, circularStd.medium, 400)}
   ${fontFace(circularStd.name, circularStd.bold, 500)}

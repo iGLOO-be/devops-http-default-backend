@@ -16,7 +16,7 @@ const Button = styled(({
     {children}
   </a>
 ))`
-  ${fontFamily({weight: 'medium', size: '16px'})};
+  ${fontFamily({ weight: 'medium', size: '16px' })};
   background: ${colors.alt};
   border-radius: 99px;
   color: ${colors.light};

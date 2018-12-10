@@ -10,7 +10,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Desc from '../components/Desc'
 
-const Error404Page = ({className}) => (
+const Error404Page = ({ className }) => (
   <div>
     <Helmet title='Error 404' />
     <Header error='404' title='Page not found' />

@@ -3,13 +3,13 @@
   "description": "iGLOO default backend",
   "version": "2.0.0",
   "dependencies": {
-    "gatsby": "^1.9.73",
-    "gatsby-link": "^1.6.22",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-styled-components": "^2.0.2",
-    "normalize.css": "^7.0.0",
-    "recompose": "^0.26.0",
-    "styled-components": "^2.2.3"
+    "gatsby": "^2.0.64",
+    "gatsby-link": "^2.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.4",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "normalize.css": "^8.0.1",
+    "recompose": "^0.30.0",
+    "styled-components": "^4.1.2"
   },
   "license": "MIT",
   "scripts": {
@@ -21,14 +21,18 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
-    "eslint": "^4.11.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.4.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "prettier": "^1.7.4"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gatsby-plugin-layout": "^1.0.10",
+    "prettier": "^1.15.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
   }
 }
