@@ -8,18 +8,19 @@ import '../../node_modules/normalize.css/normalize.css'
 import Button from '../components/ui/Button'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import TableInfo from '../components/TableInfo'
 import Desc from '../components/Desc'
 
-const Error404Page = () => (
+const Error50x = () => (
   <div>
-    <Helmet title='Error 404' />
-    <Header error='404' title='Page not found' />
+    <Helmet title='Maintenance' />
+    <Header error='503' title='Service unavailable' />
     <Desc>
-      The page you’re looking for can’t be found but may be avalaible in the future.
-      Please try again later.
+      The server is currently unavailable. Please try to go back or try again later.
     </Desc>
-    <Footer><Button>Go to homepage</Button></Footer>
+    <Footer><Button>Go back</Button></Footer>
+    <TableInfo />
   </div>
 )
 
-export default Error404Page
+export default Error50x
