@@ -17,7 +17,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run develop",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
+    "build:prefix": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "npm run lint",
