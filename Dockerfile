@@ -3,7 +3,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 WORKDIR /app
 COPY ./package.json ./package-lock.json ./gatsby-config.js ./
 RUN npm ci
-COPY ./gatsby-config.js ./
+COPY ./gatsby-*.js ./
 COPY ./src ./src/
 RUN npm run build:prefix
 
