@@ -1,8 +1,8 @@
 import React from 'react'
-import Error404 from './404'
+import Maintenance from './maintenance'
 
 const IndexPage = () => (
-  <Error404 />
+  <Maintenance />
 )
 
 export default IndexPage
