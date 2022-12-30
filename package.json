@@ -3,7 +3,7 @@
   "description": "iGLOO default backend",
   "version": "2.2.0",
   "dependencies": {
-    "gatsby": "^2.8.8",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-styled-components": "^3.0.7",
     "normalize.css": "^8.0.1",
