@@ -1,4 +1,4 @@
-FROM node:10.16.0-alpine
+FROM node:10.16.0-alpine as builder
 ENV NPM_CONFIG_LOGLEVEL warn
 WORKDIR /app
 COPY ./package.json ./package-lock.json ./gatsby-config.js ./
@@ -7,10 +7,10 @@ COPY ./gatsby-*.js ./
 COPY ./src ./src/
 RUN npm run build:prefix
 
-FROM nginx:1.17.0-alpine
+FROM nginx:1.23.4-alpine
 ENV NGINX_PORT=8080
-COPY ./nginx-server.conf /etc/nginx/conf.d/default.conf.tpl
-COPY ./docker-entrypoint.sh /docker-entrypoint.sh
-COPY --from=0 /app/public /public
-
-CMD ["/docker-entrypoint.sh"]
+ENV PAGE404="404"
+ENV INDEX=""
+COPY ./nginx-server.conf /etc/nginx/templates/default.conf.template
+# ADD ./docker-entrypoint.sh /docker-entrypoint.d/
+COPY --from=builder /app/public /public
